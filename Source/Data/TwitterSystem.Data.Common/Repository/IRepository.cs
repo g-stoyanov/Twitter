@@ -1,4 +1,4 @@
-﻿namespace BlogSystem.Data.Contracts
+﻿namespace TwitterSystem.Data.Common.Repository
 {
     using System;
     using System.Linq;
