@@ -179,7 +179,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -247,6 +246,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\TwitterSystem.Data.Models\TwitterSystem.Data.Models.csproj">
+      <Project>{90a864dc-36b8-4220-b3f7-9bd476792d33}</Project>
+      <Name>TwitterSystem.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\TwitterSystem.Data\TwitterSystem.Data.csproj">
+      <Project>{6929f7fc-6ec2-4670-ab1c-403fa766727f}</Project>
+      <Name>TwitterSystem.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
