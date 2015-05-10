@@ -248,6 +248,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\TwitterSystem.Data.Common\TwitterSystem.Data.Common.csproj">
+      <Project>{533852b6-d017-44e7-9457-5f45b7805efd}</Project>
+      <Name>TwitterSystem.Data.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\TwitterSystem.Data.Models\TwitterSystem.Data.Models.csproj">
       <Project>{90a864dc-36b8-4220-b3f7-9bd476792d33}</Project>
       <Name>TwitterSystem.Data.Models</Name>

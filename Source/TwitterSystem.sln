@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterSystem.Data", "Data\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterSystem.Web", "Web\TwitterSystem.Web\TwitterSystem.Web.csproj", "{B9834775-5CBF-49A9-B383-6C702EC5B759}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterSystem.Data.Common", "Data\TwitterSystem.Data.Common\TwitterSystem.Data.Common.csproj", "{533852B6-D017-44E7-9457-5F45B7805EFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{B9834775-5CBF-49A9-B383-6C702EC5B759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9834775-5CBF-49A9-B383-6C702EC5B759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9834775-5CBF-49A9-B383-6C702EC5B759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533852B6-D017-44E7-9457-5F45B7805EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533852B6-D017-44E7-9457-5F45B7805EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533852B6-D017-44E7-9457-5F45B7805EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533852B6-D017-44E7-9457-5F45B7805EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{90A864DC-36B8-4220-B3F7-9BD476792D33} = {EB9DA1F8-4D66-4CC9-97E5-14C0CFE1FE42}
 		{6929F7FC-6EC2-4670-AB1C-403FA766727F} = {EB9DA1F8-4D66-4CC9-97E5-14C0CFE1FE42}
+		{533852B6-D017-44E7-9457-5F45B7805EFD} = {EB9DA1F8-4D66-4CC9-97E5-14C0CFE1FE42}
 		{B9834775-5CBF-49A9-B383-6C702EC5B759} = {AAD20E09-9C11-4D50-8A56-062475D3BF1B}
 	EndGlobalSection
 EndGlobal
