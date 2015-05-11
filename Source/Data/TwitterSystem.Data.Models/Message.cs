@@ -1,12 +1,11 @@
 ﻿namespace TwitterSystem.Data.Models
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using TwitterSystem.Data.Common.Models;
 
-    public class Tweet : AuditInfo, IDeletableEntity
+    public class Message : AuditInfo, IDeletableEntity
     {
         [Key]
         public int Id { get; set; }
@@ -15,15 +14,15 @@
 
         public string Content { get; set; }
 
-        public int ProfileId { get; set; }
+        public bool IsReaded { get; set; }
 
-        public virtual TwitterProfile AuthorId { get; set; }
+        public int AuthorTwitterProfileId { get; set; }
 
-        public virtual ICollection<TwitterProfile> ProfileLikes { get; set; }
+        public virtual TwitterProfile Author { get; set; }
 
-        public int TweetId { get; set; }
+        public int RecipientTwitterProfileId { get; set; }
 
-        public Tweet ParrentTweet { get; set; }
+        public virtual TwitterProfile Recipient { get; set; }
 
         [Index]
         public bool IsDeleted { get; set; }

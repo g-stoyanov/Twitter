@@ -21,7 +21,12 @@
             return new ApplicationDbContext();
         }
 
+        public IDbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public IDbSet<Message> Messages { get; set; }
+        public IDbSet<Notification> Notifications { get; set; }
+        public IDbSet<Report> Reports { get; set; }
         public IDbSet<Tweet> Tweets { get; set; }
+        public IDbSet<TwitterProfile> TwiterProfiles { get; set; }
 
         public override int SaveChanges()
         {

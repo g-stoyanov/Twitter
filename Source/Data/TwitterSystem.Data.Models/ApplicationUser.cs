@@ -12,6 +12,10 @@
             //This will prevent UserManager.CreatedAsync from causing exception
             this.CreatedOn = DateTime.Now;
         }
+
+        public int TwitterProfileId { get; set; }
+
+        //public virtual TwitterProfile TwitterProfile { get; set; }
         
         [Index]
         public bool IsDeleted { get; set; }
